@@ -1,0 +1,14 @@
+.contenedor {
+  width: auto;
+}
+.texto,
+.imagen {
+  display: inline-block;
+}
+.texto {
+  text-align: justify;
+}
+.row {
+  padding: 60px;
+  background-color: #8fd5a6;
+}
