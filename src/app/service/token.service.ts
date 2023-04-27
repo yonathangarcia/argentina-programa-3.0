@@ -1,3 +1,4 @@
+import { Token } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 
 const TOKEN_KEY = 'AuthToken';
@@ -39,6 +40,6 @@ export class TokenService {
     return this.roles;
   }
   public logOut(): void {
-    window.sessionStorage;
+    window.sessionStorage.clear();
   }
 }
