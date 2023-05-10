@@ -1,6 +1,9 @@
-div {
+#bkg {
   background-color: #d0ada7;
 }
+/*div {
+  background-color: #d0ada7;
+}*/
 @media (min-width: 576px) {
   #imgperfil {
     margin-top: -13%;

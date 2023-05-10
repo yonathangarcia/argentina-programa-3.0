@@ -1,17 +1,22 @@
 <div class="row" id="divinfo">
-  <div class="col-xs-12 col-sm-1 col-md-3 col-lg-3"></div>
-  <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-    <h4 id="nombre">{{ persona.nombre }} {{ persona.apellido }}</h4>
+  <div class="col-12">
+    <button
+      type="button"
+      class="btn btn-dark"
+      routerLink="/editinfo/1"
+      *ngIf="isLogged"
+    >
+      Editar Datos
+    </button>
+  </div>
+  <div class="col-sm-1 col-md-3 col-lg-3 col-xl-3"></div>
+  <div class="col-sm-3 col-md-2 col-lg-2 col-xl-2">
+    <h4 id="nombre">{{ persona?.nombre }} {{ persona?.apellido }}</h4>
     <p></p>
     <h6>Fullstack Developer Jr.</h6>
   </div>
-  <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7">
+  <div class="col-sm-8 col-md-7 col-lg-7 col-xl-7">
     <h1>Acerca de mí</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi quo
-      odio quam obcaecati, hic incidunt corrupti voluptas quasi animi quia
-      repellendus veniam, perspiciatis culpa voluptates illo tempore? Voluptas,
-      voluptatem?
-    </p>
+    <p>{{ persona?.descripcion }}</p>
   </div>
 </div>
